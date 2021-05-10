@@ -33,7 +33,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="{{ Route('password.request') }}">Mot de passe oublié</a></li>
               <li><a class="dropdown-item" href="{{ route('logout') }}">Deconnexion</a></li>
             </ul>
           </li>
@@ -42,6 +42,8 @@
     </div>
   </nav>
 <h1>{{ Auth::user()->name }} Dashbord</h1>
+
+@yield('content')
 
 
 
